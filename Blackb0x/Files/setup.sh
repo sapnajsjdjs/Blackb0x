@@ -1,4 +1,5 @@
 
+
 #!/bin/sh
 
 echo "Starting post-install" > /var/mobile/Media/blackb0x.log
@@ -27,7 +28,7 @@ apt-get update || echo "Update failed" >> /var/mobile/Media/blackb0x.log
 #Stashing
 if [ ! -d /var/stash ]; then
 
-	if /bin/uname -m | grep "AppleTV2" ; then
+	if /bin/uname -m | grep "AppleTV3" ; then
 
 		#Patch out sandbox profile from AppleTV binary
 		echo "Patching AppleTV entitlements" >> /var/mobile/Media/blackb0x.log
